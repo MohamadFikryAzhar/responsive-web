@@ -1,0 +1,371 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapNav{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.menuNav{
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.menuNav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.menuNav ul li a{
+    padding: 30px 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2e266f;
+}
+
+.menuNav ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: #3928b6;
+    text-decoration-thickness: 4px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.profile::before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 80px;
+    background-color: #EFC81A;
+    margin-right: 10px;
+}
+
+.profile img{
+    width: 60px;
+    height: 60px;
+}
+
+.profile .paragraph{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.profile .paragraph p{
+    font-family: 'Poppins' sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile .paragraph a{
+    font-family: 'Poppins' sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+}
+
+#pageOne{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: left;
+}
+
+#pageOne .container{
+    width: 1100px;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+}
+
+.discover{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.discoveryText h1{
+    width: 80%;
+    margin-right: auto;
+    font-family: 'Poppins' sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #2e266f;
+}
+
+.search{
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.search input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    background-color:#EFEFEF;
+}
+
+.search .start{
+    width: 130px;
+    height: 60px;
+    border: none;
+    background-color: #EFC81A;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    border-radius: 6px;
+}
+
+.search input::placeholder{
+    color: #2e266f;
+    font-family: 'Poppins' sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 0px;
+    margin-left: -70px;
+}
+
+.filter button{
+    margin-right: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #EFC81A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+    height: 50px;
+}
+
+.filter .vegetarian{
+    background-color: #00E092;
+    width: 120px;
+}
+
+.filter .breakfast{
+    background-color: #00E092;
+}
+
+#pageTwo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+#pageTwo .contains{
+    width: 1100px;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+}
+
+#pageTwo .contains .wrap{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+#pageTwo .contains .wrap .bomb{
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Poppins' sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#pageTwo .contains .wrap .bomb .likes{
+    background-color: #EFC81A;
+    color: white;
+    width: 330px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins' sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#pageTwo .contains .wrap .bomb .profileKaren img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.borders1{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 740px;
+    background-color: #EFC81A;
+    right: -120px;
+    top: -30px;
+    z-index: -5;
+}
+
+.borders2{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 900px;
+    background-color: #EFC81A;
+    right: -120px;
+    top: 1000px;
+    z-index: -5;
+}
+
+#last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#last .show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 60px;
+    vertical-align: middle;
+}
+
+.show p{
+    font-family: 'Poppins' sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3F3A3A;
+    margin-top: 10px;
+}
+
+.show .next{
+    margin-left: 30px;
+    font-family: 'Poppins' sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #EFC81A;
+    color: #EFEFEF;
+    border: none;
+    border-radius: 6px;
+    width: 70px;
+    height: 45px;
+}
+
+footer{
+    background-color: #EFC81A;
+    display: block;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.wrap4{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eat h1{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 50px;
+    color: #2E266F;
+}
+.disc4 p{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    color: #2E266F;
+}
+
+.wrap-nav2{
+    display: flex;
+    height: 30%;
+    align-items: center;
+    position: relative;
+}
+
+.nav-foot{
+    width: 100%;
+    position: relative;
+}
+
+.nav-foot ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.nav-foot ul li{
+    text-decoration: none;
+    color:#2E266F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.nav-foot .copyright{
+    width: 10%;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-foot ul li:hover{
+    color: white;
+    cursor: pointer;
+}

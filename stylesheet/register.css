@@ -1,0 +1,260 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleText{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo{
+    margin-top: 15px;
+}
+
+.recipeTitle h2{
+    font-family: 'Poppins' sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #EFC81A;
+}
+
+.text1 h2{
+    font-family: 'Poppins' sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #EFC81A;
+    margin-top: 15px;
+}
+
+.text1 p{
+    font-family: 'Inter' sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8692A6;
+}
+
+.line{
+    width: 472px;
+    height: 0px;
+    border: 1px solid #F5F5F5;
+}
+
+.name p{
+    font-family: 'Poppins' sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #696F79;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.name input{
+    width: 478px;
+    height: 54px;
+    margin-top: -10px;
+    background-color: white;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #8692A6;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.name input::placeholder{
+    padding-left: 10px;
+}
+
+.name input:focus{
+    border-color: #EFC81A;
+}
+
+.name input:focus::placeholder{
+    padding-left: 0px;
+}
+
+.email p{
+    font-family: 'Poppins' sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #696F79;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.email input{
+    width: 478px;
+    height: 54px;
+    margin-top: -10px;
+    background-color: white;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #8692A6;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.email input::placeholder{
+    padding-left: 10px;
+}
+
+.email input:focus{
+    border-color: #EFC81A;
+}
+
+.email input:focus::placeholder{
+    padding-left: 0px;
+}
+
+.password p{
+    font-family: 'Poppins' sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #696F79;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.password input{
+    width: 478px;
+    height: 54px;
+    margin-top: -10px;
+    background-color: white;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #8692A6;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.password input::placeholder{
+    padding-left: 10px;
+}
+
+.password input:focus::placeholder{
+    padding-left: 0px;
+}
+
+.password input:focus{
+    border-color: #EFC81A;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+
+.checkbox span{
+    font-family: 'Poppins' sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    /* padding-left: 8px; */
+}
+
+.checkbox input[type="checkbox"]{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8692A6;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+    background-color: gold;
+    opacity: 1;
+    border-color: gold;
+}
+
+.checkbox label:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox input[type="checkbox"]:checked + label:after {
+    display: block;
+}
+
+.button{
+    width: 478px;
+    height: 43px;
+    background-color: #EFC81A;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-color: #EFC81A;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.button:hover{
+    background-color: white;
+    border-color: #EFC81A;
+    color: #EFC81A;
+}
+
+.signin{
+    font-family: 'Poppins' sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #999999;
+    margin-top: 20px;
+}
+
+.signin .signUp{
+    color: #EFC81A;
+    text-decoration: none;
+}
+
+.signUp:hover{
+    color: #696F79;
+    cursor: pointer;
+}
